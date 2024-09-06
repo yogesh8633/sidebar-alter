@@ -111,7 +111,7 @@ const Sidebar = ({ isCollapsed, onToggle }) => {
         </ul>
       </div>
 
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center space-x-2 justify-center">
       {!isCollapsed &&   <span className="text-gray-500 dark:text-gray-300">Light</span>}
       
       <div
