@@ -12,7 +12,6 @@ import { SIDEBAR_ITEMS } from "../../constants/sidebar-items";
 import { Tooltip } from "reactstrap";
 import logo from "../../assets/logo.png"
 
-// Replace with your actual logo
 const Logo = ({ isCollapsed }) => (
   <div className="flex items-center justify-between mb-6">
     <div className={`flex items-center ${isCollapsed? "flex-col":"flex"}`}>
@@ -41,7 +40,6 @@ const Sidebar = ({ isCollapsed, onToggle }) => {
         darkMode ? "bg-gray-900 text-[#8172E8]" : "bg-white text-[#8172E8]"
       } ${isCollapsed ? "w-20" : "w-64"}`}>
       
-      {/* Top Section: Logo and Collapse Button */}
       <div>
         <div className={`flex items-center justify-between mb-6 ${isCollapsed? "flex-col":"flex"}`}>
           <Logo isCollapsed={isCollapsed} />
@@ -52,7 +50,6 @@ const Sidebar = ({ isCollapsed, onToggle }) => {
           </button>
         </div>
 
-        {/* User Info */}
         <div className="flex items-center justify-center p-2 mb-4 rounded bg-gray-100 dark:bg-gray-800">
           <FiUser size={20} />
           {!isCollapsed && (
@@ -63,11 +60,9 @@ const Sidebar = ({ isCollapsed, onToggle }) => {
           )}
         </div>
 
-        {/* Sidebar Items */}
         <ul className="space-y-2">
           {SIDEBAR_ITEMS.map((group, groupIndex) => (
               <div key={groupIndex} className="mb-6">
-              {/* Render group heading */}
               {!isCollapsed && group.group && (
                 <div className="font-semibold text-gray-600 dark:text-gray-400 uppercase mt-4 mb-2 px-2">
                   {group.group}
