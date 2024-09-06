@@ -63,6 +63,7 @@ const Sidebar = ({ isCollapsed, onToggle }) => {
         <ul className="space-y-2">
           {SIDEBAR_ITEMS.map((group, groupIndex) => (
               <div key={groupIndex} className="mb-6">
+                <hr className="border-t-2 mt-8 border-gray-300"/>
               {!isCollapsed && group.group && (
                 <div className="font-semibold text-gray-600 dark:text-gray-400 uppercase mt-4 mb-2 px-2">
                   {group.group}
