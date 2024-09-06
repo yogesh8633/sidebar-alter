@@ -13,7 +13,7 @@ import { Tooltip } from "reactstrap";
 import logo from "../../assets/logo.png"
 
 const Logo = ({ isCollapsed }) => (
-  <div className="flex items-center justify-between mb-6">
+  <div className="flex items-center justify-between ">
     <div className={`flex items-center ${isCollapsed? "flex-col":"flex"}`}>
       <img src={logo} alt="Logo" className="h-8" />
       {!isCollapsed && <span className="ml-2 text-xl font-semibold">FashionHub</span>}
